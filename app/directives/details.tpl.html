@@ -19,7 +19,7 @@
 <hr />
 <ul class="swd-repos--list">
   <li ng-repeat="repo in repos | filter : search">
-    <h4><a href="repo.url" ng-bind="repo.name"></a></h4>
+    <h4><a href="{{repo.html_url}}" ng-bind="repo.name"></a></h4>
     <p>
       <span ng-bind="repo.language" style="float:left;"></span>
       <span style="float:right;">updated on {{repo.updated_at | fromNow}}</span>

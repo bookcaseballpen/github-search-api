@@ -22,7 +22,7 @@ angular.module('app')
 
               $scope.search = function () {
                 $scope.results = [];
-                $scope.display = false;
+                $scope.message.display = false;
                 if(!$scope.name) {
                   $scope.message.message = "You need specific a name for serach";
                   $scope.message.display = true;
