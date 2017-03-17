@@ -12,14 +12,18 @@ This repo is to demo how to fetch user information and repositories using github
 
 ## Folder Structure
 ```
-  - directive
-    |- details.js
-    |- details.tpl.html
-    |- main.js
-    |- main.tpl.html
-  |- app.js
-  |- index.html
-  |- main.css
+  -app //
+    |- directive
+      |- details.js
+      |- details.tpl.html
+      |- main.js
+      |- main.tpl.html
+    |- app.js
+    |- index.html
+    |- main.css
+  |- index.js  use expressjs for host on heroku
+  |- package.json
+  |- Procfile.js
   |- README.md
 ```
 ** for demo purpose, this project do not use pre-compiler and npm packages.
