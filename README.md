@@ -1,7 +1,7 @@
 # Github Search API
 This repo is to demo how to fetch user information and repositories using github name api.
 
-[live link]()
+[live link on heroku](https://githubsearchapi.herokuapp.com/)
 
 ## Dependencies
 * angularjs
