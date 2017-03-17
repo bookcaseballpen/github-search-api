@@ -1,5 +1,6 @@
-# Github Search api
+# Github Search API
 This repo is to demo how to fetch user information and repositories using github name api.
+
 [live link]()
 
 ## Dependencies

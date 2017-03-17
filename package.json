@@ -1,0 +1,19 @@
+{
+  "name": "github-search-api",
+  "version": "1.0.0",
+  "description": "This repo is to demo how to fetch user information and repositories using github name api.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bookcaseballpen/github-search-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bookcaseballpen/github-search-api/issues"
+  },
+  "homepage": "https://github.com/bookcaseballpen/github-search-api#readme"
+}
