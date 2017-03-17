@@ -3,6 +3,12 @@ This repo is to demo how to fetch user information and repositories using github
 
 [live link on heroku](https://githubsearchapi.herokuapp.com/)
 
+## Features
+* use github api to search user using user name
+* display selected user information and repositories
+* seach in user's repositories using repo name
+* display repositories' latest update
+
 ## Dependencies
 * angularjs
 * jquery
