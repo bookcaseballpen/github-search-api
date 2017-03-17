@@ -1,0 +1,31 @@
+<h1 class="swd-title col-md-offset-2 col-lg-offset-2 col-md-8 col-lg-8">{{title}}</h1>
+<div class="swd-page--search col-md-offset-2 col-lg-offset-2 col-md-8 col-lg-8" ng-hide="show">
+  <div class="swd-search--input">
+    <div class="form-inline">
+      <input class="form-control" type="text" ng-keyup="$event.keyCode == 13 && search()" ng-model="name" />
+      <button class="btn btn-primary" ng-click="search()">Search</button>
+    </div>
+    <p class="swd-message" ng-show = "message.display">
+      {{message.message}}
+    </p>
+  </div>
+  <div class="swd-search--result" ng-if="results.length > 0">
+    <ul class="swd-results">
+      <li class="col-lg-3 col-md-3 swd-result" ng-repeat="result in results" ng-click="getDetail($index)">
+        <img class="swd-result--avatar" ng-src="{{result.avatar_url}}" alt="Avatar" />
+        <p class="swd-result--name" ng-bind="result.login"></p>
+      </li>
+      <div style="clear:both">
+      </div>
+    </ul>
+  </div>
+</div>
+
+<div class="swd-page--details col-md-offset-2 col-lg-offset-2 col-md-8 col-lg-8" ng-show="show">
+    <p class="swd-back" ng-click="back()">
+      <i class="fa fa-angle-double-left swd-btn--back"></i>
+      <span>Back</span>
+    </p>
+    <details-component class="swd-details-component" ng-if="details" details="details"></details-component>
+</div>
+<div class="clear"></div>

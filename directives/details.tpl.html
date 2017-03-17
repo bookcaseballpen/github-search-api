@@ -1,0 +1,31 @@
+<div ng-if="infos" class="swd-details col-md-4 col-lg-4">
+<img ng-src="{{infos.avatar_url}}" style="width:230px; height:230px; border-radius:7px;"/>
+<h3 ng-bind="infos.name"></h3>
+<p ng-bind="infos.login"></p>
+<p ng-bind="infos.bio"></p>
+<p>
+  <i class="fa fa-envelope"></i>
+  <span ng-bind="infos.email"></span>
+</p>
+<p>
+  <i class="fa fa-link"></i>
+  <span ng-bind="infos.html_url"></span>
+</p>
+</div>
+<div class="swd-repos col-md-8 col-lg-8"  ng-if="repos">
+<h4>Repositories</h4>
+<hr />
+  <input type="text" ng-model="search" class="form-control" placeholder="Search repositories..."/>
+<hr />
+<ul class="swd-repos--list">
+  <li ng-repeat="repo in repos | filter : search">
+    <h4><a href="repo.url" ng-bind="repo.name"></a></h4>
+    <p>
+      <span ng-bind="repo.language" style="float:left;"></span>
+      <span style="float:right;">updated on {{repo.updated_at | fromNow}}</span>
+      <div style="clear:both;"></div>
+    </p>
+    <hr  />
+  </li>
+</ul>
+</div>

@@ -1,0 +1,72 @@
+body {
+  font-family: roboto;
+}
+.clear {
+  clear: both;
+}
+.swd-main {
+  min-height: calc(100vh - 30px);
+  display: block;
+}
+.swd-title {
+  text-align: center;
+}
+.swd-message {
+  margin: 10px 0;
+  color: red;
+}
+.swd-page--search, .swd-page--detail {
+  text-align: center;
+}
+.swd-page--detail {
+  margin: 20px 0;
+}
+.swd-search--input {
+  margin: 20px auto;
+}
+.swd-results {
+  list-style: none;
+  padding: 0;
+  margin: 40px 0;
+}
+.swd-result {
+  cursor: pointer;
+  padding: 20px 0;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px;
+}
+.swd-result:hover {
+  color: #4b89dc;
+}
+.swd-result--name {
+  margin: 10px 0;
+}
+.swd-result--avatar {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.swd-back {
+  cursor: pointer;
+  color: #337ab7;
+  line-height: 25px;
+}
+.swd-btn--back {
+  font-size: 25px;
+  color: #337ab7;
+  vertical-align: bottom;
+}
+.swd-details-component {
+  display: inherit;
+}
+.swd-repos--list {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+.swd-copyright {
+  color: grey;
+  font-size: 14px;
+  text-align: center;
+}
