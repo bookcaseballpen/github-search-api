@@ -9,6 +9,9 @@
   "scripts": {
     "start": "node index.js"
   },
+  "dependencies": {
+    "express": "4.13.3"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bookcaseballpen/github-search-api.git"
