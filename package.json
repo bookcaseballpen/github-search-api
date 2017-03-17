@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "This repo is to demo how to fetch user information and repositories using github name api.",
   "main": "index.js",
+  "engines": {
+    "node": "5.9.1"
+  },
   "scripts": {
     "start": "node index.js"
   },
